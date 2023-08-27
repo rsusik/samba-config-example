@@ -1,0 +1,9 @@
+# /etc/fstab
+# mount samba share
+
+//[IP]/files /files cifs credentials=/home/[USERNAME]/.smbcredentials,vers=3.0 0 0
+
+# or with username and password
+
+//[IP]/files /files cifs username=[USERNAME],uid=[USERNAME],password=[PASSWORD],vers=3.0 0 0
+
